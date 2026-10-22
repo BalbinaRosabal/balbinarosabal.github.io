@@ -1,0 +1,1290 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Balbina Rosabal — data analytics, business intelligence and applied research with healthcare and environmental research experience in Toronto, Canada.">
+  <meta name="theme-color" content="#f5f8fe">
+  <meta property="og:title" content="Balbina Rosabal | Data Analytics · Business Intelligence · Research">
+  <meta property="og:description"
+    content="Data analytics, research, healthcare and environmental science. Experience, tools and projects.">
+  <title>Balbina Rosabal | Data Analytics, BI &amp; Research</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    :root {
+      --bg: #f5f8fe;
+      --ink: #142037;
+      --mid: #405779;
+      --muted: #5b6d84;
+      --blue: #225ef2;
+      --blue-deep: #164bc5;
+      --soft: #e8efff;
+      --border: #d8e2f0;
+      --card: #fff;
+      --shadow: 0 16px 36px rgba(18, 48, 93, .065);
+      font-synthesis: none
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      font: 15px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      -webkit-font-smoothing: antialiased
+    }
+
+    a {
+      color: var(--blue-deep);
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px
+    }
+
+    a:hover {
+      color: #09349d
+    }
+
+    a:focus-visible {
+      outline: 3px solid #d88a12;
+      outline-offset: 4px
+    }
+
+    .wrap {
+      width: min(1160px, calc(100% - 56px));
+      margin: 0 auto
+    }
+
+    .ico {
+      width: 18px;
+      height: 18px;
+      flex: none
+    }
+
+    header {
+      background: rgba(255, 255, 255, .86);
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      z-index: 5
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 22px;
+      min-height: 75px
+    }
+
+    .logo {
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: 800;
+      letter-spacing: -.045em;
+      white-space: nowrap
+    }
+
+    .logo b {
+      color: var(--blue)
+    }
+
+    nav {
+      display: flex;
+      gap: 23px;
+      align-items: center;
+      flex-wrap: wrap
+    }
+
+    nav a {
+      font-weight: 650;
+      color: #4f627b;
+      text-decoration: none;
+      font-size: 13px
+    }
+
+    nav a:hover {
+      color: var(--blue)
+    }
+
+    .hero {
+      padding: 66px 0 78px
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.65fr) minmax(300px, .9fr);
+      gap: 48px;
+      align-items: center
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--blue);
+      font-weight: 800;
+      background: #e1eafe;
+      width: fit-content;
+      padding: 6px 13px;
+      border-radius: 100px;
+      margin: 0 0 23px
+    }
+
+    h1 {
+      font-size: clamp(42px, 5.9vw, 72px);
+      line-height: 1.07;
+      letter-spacing: -.064em;
+      margin: 0 0 27px;
+      max-width: 730px
+    }
+
+    .lead {
+      color: var(--mid);
+      font-size: clamp(17px, 1.7vw, 19px);
+      line-height: 1.8;
+      max-width: 700px;
+      margin: 0 0 26px
+    }
+
+    .actions {
+      display: flex;
+      gap: 11px;
+      flex-wrap: wrap
+    }
+
+    .button {
+      display: inline-flex;
+      gap: 9px;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      border: 1px solid var(--blue);
+      font-size: 13px;
+      font-weight: 750;
+      border-radius: 25px;
+      padding: 11px 18px;
+      color: #fff;
+      background: var(--blue)
+    }
+
+    .button:hover {
+      background: var(--blue-deep);
+      color: #fff
+    }
+
+    .button.alt {
+      background: transparent;
+      color: var(--blue)
+    }
+
+    .button.alt:hover {
+      background: #e8efff;
+      color: var(--blue-deep)
+    }
+
+    .button .ico {
+      width: 15px;
+      height: 15px
+    }
+
+    .highlights {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 13px;
+      margin-top: 30px;
+      max-width: 690px
+    }
+
+    .highlight {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 16px 20px
+    }
+
+    .highlight strong {
+      font-size: 20px;
+      line-height: 1.25;
+      display: block;
+      letter-spacing: -.025em
+    }
+
+    .highlight .long {
+      font-size: 17px
+    }
+
+    .highlight span {
+      display: block;
+      color: var(--muted);
+      font-size: 13px;
+      margin-top: 4px
+    }
+
+    .contact-shell {
+      border-radius: 26px;
+      background: white;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      padding: 22px
+    }
+
+    .contact-card {
+      border: 1px solid var(--border);
+      border-radius: 19px;
+      background: #f9fbff;
+      padding: 23px
+    }
+
+    .mini-avatar {
+      width: 55px;
+      height: 55px;
+      border: 2px solid #fff;
+      box-shadow: 0 0 0 1px #d9e6f7;
+      border-radius: 15px;
+      background: linear-gradient(135deg, #dde9ff, #bcd1fc);
+      color: #1c4aab;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      letter-spacing: -.05em;
+      font-weight: 800;
+      margin-bottom: 17px;
+      position: relative;
+      overflow: hidden
+    }
+
+    .mini-avatar img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .contact-card h2 {
+      font-size: 21px;
+      line-height: 1.25;
+      letter-spacing: -.03em;
+      margin: 0 0 20px
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 14px;
+      margin: 13px 0
+    }
+
+    .contact-item svg {
+      color: var(--blue)
+    }
+
+    .contact-item a {
+      font-weight: 700;
+      text-decoration: none
+    }
+
+    .contact-item span {
+      color: var(--mid)
+    }
+
+    .contact-divider {
+      border: 0;
+      border-top: 1px solid var(--border);
+      margin: 22px 0
+    }
+
+    .contact-card .aside-description {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0 0 22px
+    }
+
+    .section {
+      padding: 65px 0 72px;
+      border-top: 1px solid var(--border);
+      scroll-margin-top: 20px
+    }
+
+    .section-heading {
+      margin-bottom: 29px
+    }
+
+    .section-heading h2 {
+      font-size: clamp(29px, 3.3vw, 38px);
+      letter-spacing: -.045em;
+      line-height: 1.2;
+      margin: 0 0 10px
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      font-size: 15px;
+      margin: 0;
+      max-width: 850px
+    }
+
+    .subsection {
+      margin-top: 30px
+    }
+
+    .subsection:first-of-type {
+      margin-top: 0
+    }
+
+    .subsection h3 {
+      font-size: 17px;
+      letter-spacing: -.02em;
+      margin: 0 0 12px;
+      color: var(--blue-deep)
+    }
+
+    .experience-list {
+      border-top: 1px solid var(--border)
+    }
+
+    .experience-item {
+      display: grid;
+      grid-template-columns: 210px minmax(0, 1fr);
+      gap: 28px;
+      padding: 23px 0;
+      border-bottom: 1px solid var(--border)
+    }
+
+    .item-meta {
+      display: flex;
+      flex-direction: column;
+      gap: 4px
+    }
+
+    .item-date {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--blue-deep)
+    }
+
+    .item-place {
+      font-size: 13px;
+      color: var(--muted)
+    }
+
+    .item-content h4 {
+      font-size: 18px;
+      margin: 0;
+      line-height: 1.35;
+      letter-spacing: -.024em
+    }
+
+    .employer {
+      font-weight: 650;
+      color: #54677f;
+      margin: 4px 0 10px
+    }
+
+    .experience-item ul {
+      padding-left: 19px;
+      margin: 8px 0 0
+    }
+
+    .experience-item li {
+      margin: 7px 0;
+      color: #405673;
+      font-size: 14px
+    }
+
+    .experience-item li::marker {
+      color: var(--blue)
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 15px
+    }
+
+    .skill-card {
+      border: 1px solid var(--border);
+      background: var(--card);
+      padding: 22px;
+      border-radius: 17px;
+      box-shadow: var(--shadow);
+      min-height: 192px
+    }
+
+    .skill-card h3 {
+      margin: 0 0 15px;
+      font-size: 16px;
+      color: var(--blue);
+      letter-spacing: -.016em
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px
+    }
+
+    .tag {
+      color: #2c4775;
+      background: #e7eeff;
+      border-radius: 99px;
+      padding: 6px 12px;
+      display: inline-flex;
+      line-height: 1.35;
+      align-items: center;
+      font-size: 12px;
+      font-weight: 550
+    }
+
+    .green h3 {
+      color: #207a66
+    }
+
+    .green .tag {
+      background: #e7f5ee;
+      color: #21705d
+    }
+
+    .purple h3 {
+      color: #6c5bac
+    }
+
+    .purple .tag {
+      background: #f0ecfe;
+      color: #6850a0
+    }
+
+    .skill-note {
+      font-size: 12px;
+      color: var(--muted);
+      margin: 13px 0 0
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 15px
+    }
+
+    .project-card {
+      min-height: 390px;
+      background: white;
+      border-radius: 16px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start
+    }
+
+    .project-label {
+      color: var(--blue);
+      text-transform: uppercase;
+      font-size: 11px;
+      font-weight: 800;
+      letter-spacing: .075em
+    }
+
+    .project-card h3 {
+      font-size: 20px;
+      line-height: 1.26;
+      letter-spacing: -.033em;
+      margin: 14px 0 9px
+    }
+
+    .project-card .project-meta {
+      color: var(--blue-deep);
+      font-size: 12px;
+      font-weight: 600;
+      margin: 0 0 11px
+    }
+
+    .project-card p {
+      color: var(--mid);
+      font-size: 13px;
+      line-height: 1.6;
+      margin: 0 0 12px
+    }
+
+    .project-card p strong {
+      color: var(--ink)
+    }
+
+    .project-card .tags {
+      margin-top: auto;
+      padding-top: 7px
+    }
+
+    .project-card .tag {
+      font-size: 11px;
+      padding: 5px 9px
+    }
+
+    .project-link {
+      margin-top: 18px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 800;
+      text-decoration: none
+    }
+
+    .project-link .ico {
+      width: 15px;
+      height: 15px
+    }
+
+    .education {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px
+    }
+
+    .education-card {
+      border: 1px solid var(--border);
+      border-radius: 15px;
+      background: white;
+      padding: 22px 23px
+    }
+
+    .education-card h3 {
+      font-size: 17px;
+      line-height: 1.35;
+      letter-spacing: -.015em;
+      margin: 0 0 8px
+    }
+
+    .education-card .school {
+      font-size: 14px;
+      color: var(--mid);
+      font-weight: 650
+    }
+
+    .education-card .years {
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--blue);
+      margin: 10px 0 0
+    }
+
+    .education-card .course {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 9px 0 0
+    }
+
+    .activity-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px
+    }
+
+    .activity-card {
+      border-left: 3px solid var(--blue);
+      padding: 2px 0 2px 16px
+    }
+
+    .activity-card h3 {
+      margin: 0 0 6px;
+      font-size: 16px
+    }
+
+    .activity-card p {
+      margin: 0;
+      font-size: 13px;
+      color: var(--mid)
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px
+    }
+
+    .about-grid p {
+      margin: 0 0 15px;
+      font-size: 15px;
+      color: var(--mid)
+    }
+
+    .about-grid h3 {
+      font-size: 18px;
+      letter-spacing: -.025em;
+      margin: 0 0 15px
+    }
+
+    .bottom-cta {
+      background: linear-gradient(100deg, #183361, #2354a0);
+      color: white;
+      border-radius: 20px;
+      padding: 33px 36px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px
+    }
+
+    .bottom-cta h2 {
+      font-size: 28px;
+      letter-spacing: -.03em;
+      margin: 0 0 7px
+    }
+
+    .bottom-cta p {
+      color: #d7e5fd;
+      margin: 0
+    }
+
+    .bottom-cta a {
+      white-space: nowrap;
+      background: white;
+      color: #204d95;
+      font-weight: 750;
+      padding: 11px 20px;
+      text-decoration: none;
+      border-radius: 22px
+    }
+
+    .footer {
+      padding: 25px 0 34px;
+      color: var(--muted);
+      font-size: 12px
+    }
+
+    .footer-grid {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px
+    }
+
+    .footer a {
+      color: #4b5e83
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0
+    }
+
+    @media(max-width:920px) {
+      .hero-grid {
+        gap: 25px;
+        grid-template-columns: 1.4fr 1fr
+      }
+
+      .skills {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+      }
+
+      .project-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr))
+      }
+
+      .project-card {
+        min-height: 340px
+      }
+    }
+
+    @media(max-width:680px) {
+      .wrap {
+        width: min(100% - 34px, 1160px)
+      }
+
+      .nav {
+        padding: 15px 0;
+        min-height: auto;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px
+      }
+
+      nav {
+        gap: 8px 17px
+      }
+
+      .hero {
+        padding: 38px 0 50px
+      }
+
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 27px
+      }
+
+      .highlights {
+        gap: 9px
+      }
+
+      .highlight {
+        padding: 13px 14px
+      }
+
+      .highlight strong {
+        font-size: 18px
+      }
+
+      .highlight .long {
+        font-size: 14px
+      }
+
+      .highlight span {
+        font-size: 12px
+      }
+
+      .contact-shell {
+        padding: 12px
+      }
+
+      .contact-card {
+        padding: 19px
+      }
+
+      .section {
+        padding: 47px 0 54px
+      }
+
+      .experience-item {
+        grid-template-columns: 1fr;
+        gap: 9px
+      }
+
+      .item-meta {
+        flex-direction: row;
+        gap: 10px;
+        flex-wrap: wrap
+      }
+
+      .skills,
+      .project-grid,
+      .education,
+      .activity-grid,
+      .about-grid {
+        grid-template-columns: 1fr
+      }
+
+      .skill-card {
+        min-height: 0
+      }
+
+      .project-card {
+        min-height: 0
+      }
+
+      .bottom-cta {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px
+      }
+
+      .bottom-cta a {
+        white-space: normal
+      }
+    }
+
+    @media(prefers-reduced-motion:reduce) {
+      html {
+        scroll-behavior: auto
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="wrap nav"><a class="logo" href="#top" aria-label="Balbina Rosabal, homepage">Balbina Rosabal<b>.</b></a>
+      <nav aria-label="Main navigation"><a href="#experience">Experience</a><a href="#skills">Tools &amp; Skills</a><a
+          href="#projects">Projects</a><a href="#education">Education</a><a href="#about">About</a><a
+          href="#contact">Contact</a></nav>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Data Analytics · Business Intelligence · Research</p>
+          <h1>Hi, I'm Balbina Rosabal.</h1>
+          <p class="lead">I bring together data analytics, applied research, and experience in clinical healthcare and
+            environmental research to understand complex systems, identify meaningful patterns, and support
+            evidence-based decisions.</p>
+          <div class="actions"><a class="button" href="#experience">Explore experience <svg class="ico"
+                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14m-7-7 7 7-7 7" />
+              </svg></a><a class="button alt" href="https://github.com/balbina-rosabal" target="_blank"
+              rel="noopener noreferrer">View GitHub <svg class="ico" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 4h6v6M20 4l-9 9" />
+                <path d="M20 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6" />
+              </svg></a></div>
+          <div class="highlights">
+            <div class="highlight"><strong>6 years</strong><span>Clinical healthcare experience</span></div>
+            <div class="highlight"><strong class="long">Interdisciplinary experience</strong><span>Healthcare ·
+                Environment · Research</span></div>
+          </div>
+        </div>
+        <aside class="contact-shell" aria-label="Contact information">
+          <div class="contact-card">
+            <div class="mini-avatar" aria-label="Personal avatar placeholder"><span>BR</span><img src="avatar.png"
+                alt="" onload="this.previousElementSibling.hidden=true" onerror="this.remove()"></div>
+            <h2>Contact</h2>
+            <div class="contact-item"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <rect x="3" y="5" width="18" height="14" rx="2" />
+                <path d="m3 7 9 6 9-6" />
+              </svg><a href="mailto:balbina.rosabal@gmail.com">Email Me</a></div>
+            <div class="contact-item"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z" />
+                <circle cx="12" cy="10" r="2.5" />
+              </svg><span>Toronto, Canada</span></div>
+            <div class="contact-item"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <rect x="2" y="2" width="20" height="20" rx="3" />
+                <path d="M7 10v7M7 7v.01M12 17v-7M12 13a3 3 0 0 1 6 0v4" />
+              </svg><a href="https://www.linkedin.com/in/balbina-rosabal/" target="_blank"
+                rel="noopener noreferrer">View LinkedIn</a></div>
+            <div class="contact-item"><svg class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"
+                aria-hidden="true">
+                <path
+                  d="M9 19c-4 1-4-2-6-2m12 4v-3.9a3.4 3.4 0 0 0-.9-2.6c3-.3 6.2-1.5 6.2-6.7a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6s-1.1-.3-3.7 1.4a12.5 12.5 0 0 0-6.8 0C5.8.3 4.7.6 4.7.6a4.8 4.8 0 0 0-.1 3.6 5.2 5.2 0 0 0-1.4 3.6c0 5.2 3.2 6.4 6.2 6.7a3.4 3.4 0 0 0-.9 2.6V21" />
+              </svg><a href="https://github.com/balbina-rosabal" target="_blank" rel="noopener noreferrer">View
+                GitHub</a></div>
+            <hr class="contact-divider">
+            <p class="aside-description">Interested in work at the intersection of analytics, research, human
+              well-being, and sustainable communities.</p><a class="button alt"
+              href="mailto:balbina.rosabal@gmail.com">Let's Connect <svg class="ico" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14m-7-7 7 7-7 7" />
+              </svg></a>
+          </div>
+        </aside>
+      </div>
+    </section>
+    <section class="section" id="experience">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>Professional Experience</h2>
+          <p>Research and clinical experience across environmental science, academic research, and patient care. The
+            roles and responsibilities below follow my resume.</p>
+        </div>
+        <div class="subsection">
+          <h3>Research and Analytical Experience</h3>
+          <div class="experience-list">
+            <article class="experience-item">
+              <div class="item-meta"><span class="item-date">Feb–Aug 2026</span><span class="item-place">Toronto,
+                  ON</span></div>
+              <div class="item-content">
+                <h4>Human-Coyote Interactions Research Project</h4>
+                <p class="employer">Humber Polytechnic</p>
+                <ul>
+                  <li>Conducted comparative municipal policy and regulatory research, synthesizing legislation,
+                    government reports and peer-reviewed evidence.</li>
+                  <li>Evaluated reporting practices, intervention criteria and evidence gaps to support
+                    multidisciplinary recommendations.</li>
+                  <li>Contributed source-material research informing interview preparation and project recommendations.
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="experience-item">
+              <div class="item-meta"><span class="item-date">Jun–Oct 2015</span><span class="item-place">Toronto,
+                  ON</span></div>
+              <div class="item-content">
+                <h4>Lawrence S. Bloomberg Faculty of Nursing</h4>
+                <p class="employer">University of Toronto</p>
+                <ul>
+                  <li>Supported doctoral research through literature screening, participant communications and research
+                    administration; maintained Excel-based evidence tracking.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="experience-item">
+              <div class="item-meta"><span class="item-date">2011–2013</span><span class="item-place">North Bay,
+                  ON</span></div>
+              <div class="item-content">
+                <h4>Plant Ecology Research Lab</h4>
+                <p class="employer">Nipissing University</p>
+                <ul>
+                  <li>Supported plant ecology field and laboratory research, data entry, statistical analysis, reports
+                    and presentations using Excel and SPSS.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="subsection">
+          <h3>Additional Professional Experience</h3>
+          <div class="experience-list">
+            <article class="experience-item">
+              <div class="item-meta"><span class="item-date">Nov 2016–Apr 2019</span><span class="item-place">Toronto,
+                  ON</span></div>
+              <div class="item-content">
+                <h4>Registered Nurse, Acute Care Nursing Resource Team (ACNRT)</h4>
+                <p class="employer">Sunnybrook Health Sciences Centre</p>
+                <ul>
+                  <li>Delivered acute care across general medicine, surgical oncology, medical/radiation oncology and
+                    overflow inpatient services, adapting across workflows, teams and patient populations while
+                    maintaining accurate, PHIPA-compliant documentation.</li>
+                  <li>Served in charge and leadership capacities; coordinated workflows and escalations, mentored staff
+                    and students, and contributed to quality improvement and knowledge translation.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="experience-item">
+              <div class="item-meta"><span class="item-date">Apr 2019–Apr 2021</span><span class="item-place">Toronto,
+                  ON</span></div>
+              <div class="item-content">
+                <h4>Registered Nurse, General Internal Medicine &amp; Nephrology</h4>
+                <p class="employer">Sunnybrook Health Sciences Centre</p>
+                <ul>
+                  <li>Managed medically complex and nephrology patients; performed charge-nurse duties, oriented staff,
+                    precepted students and contributed to unit quality improvement as a wound care champion.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="experience-item">
+              <div class="item-meta"><span class="item-date">Oct 2021–Jan 2022</span><span class="item-place">Keswick,
+                  ON</span></div>
+              <div class="item-content">
+                <h4>Registered Nurse</h4>
+                <p class="employer">Cedarvale Lodge</p>
+                <ul>
+                  <li>Coordinated long-term-care resident care, maintained regulated documentation, supervised RPN/PSW
+                    care and collaborated with families and allied-health professionals.</li>
+                </ul>
+              </div>
+            </article>
+            <article class="experience-item">
+              <div class="item-meta"><span class="item-date">Jan–Sep 2022</span><span class="item-place">Newmarket,
+                  ON</span></div>
+              <div class="item-content">
+                <h4>Registered Nurse, General Internal Medicine</h4>
+                <p class="employer">Southlake Regional Health Centre</p>
+                <ul>
+                  <li>Coordinated admissions, discharges and care across patient acuities; performed charge-nurse duties
+                    and managed interdisciplinary workflows requiring accurate documentation and rapid evidence-based
+                    decisions.</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="skills">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>Tools &amp; Skills</h2>
+          <p>A snapshot of the technical stack, analytical methods, research practices, and systems I have used through
+            projects and professional experience.</p>
+        </div>
+        <div class="skills">
+          <article class="skill-card blue">
+            <h3>Data &amp; Databases</h3>
+            <div class="tags"><span class="tag">SQL</span><span class="tag">MySQL</span><span
+                class="tag">DBeaver</span><span class="tag">CTEs</span><span class="tag">Window Functions</span><span
+                class="tag">Views</span><span class="tag">Relational Modeling</span><span class="tag">Dimensional
+                Modeling</span><span class="tag">Staging / ETL</span><span class="tag">EXPLAIN &amp; Indexing</span>
+            </div>
+          </article>
+          <article class="skill-card blue">
+            <h3>BI &amp; Reporting</h3>
+            <div class="tags"><span class="tag">Power BI Desktop &amp; Service</span><span class="tag">DAX</span><span
+                class="tag">Power Query</span><span class="tag">Excel</span><span class="tag">KPI
+                Development</span><span class="tag">Interactive Dashboards</span><span class="tag">PivotTables /
+                PivotCharts</span><span class="tag">XLOOKUP</span></div>
+          </article>
+          <article class="skill-card blue">
+            <h3>Python &amp; Data Quality</h3>
+            <div class="tags"><span class="tag">Python</span><span class="tag">Pandas</span><span
+                class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">Seaborn</span><span
+                class="tag">Profiling</span><span class="tag">Data Cleaning</span><span
+                class="tag">Validation</span><span class="tag">Reconciliation</span><span
+                class="tag">Deduplication</span></div>
+          </article>
+          <article class="skill-card blue">
+            <h3>Machine Learning &amp; Statistics</h3>
+            <div class="tags"><span class="tag">scikit-learn</span><span class="tag">LightGBM</span><span
+                class="tag">CatBoost</span><span class="tag">Time-Series Forecasting</span><span
+                class="tag">Regression</span><span class="tag">Classification</span><span class="tag">Model
+                Evaluation</span><span class="tag">SPSS</span></div>
+          </article>
+          <article class="skill-card blue">
+            <h3>Cloud &amp; Data Platforms</h3>
+            <div class="tags"><span class="tag">AWS EC2</span><span class="tag">Ubuntu</span><span
+                class="tag">Databricks</span><span class="tag">PySpark</span><span class="tag">Delta Lake</span><span
+                class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span></div>
+          </article>
+          <article class="skill-card green">
+            <h3>Research &amp; Evidence</h3>
+            <div class="tags"><span class="tag">Literature Screening</span><span class="tag">Evidence
+                Synthesis</span><span class="tag">Comparative Policy Research</span><span class="tag">Research
+                Ethics</span><span class="tag">Clinical Trial Design</span><span class="tag">Statistical
+                Analysis</span><span class="tag">Excel</span><span class="tag">EndNote</span></div>
+          </article>
+          <article class="skill-card purple">
+            <h3>Healthcare Systems &amp; Privacy</h3>
+            <div class="tags"><span class="tag">Epic</span><span class="tag">Meditech</span><span
+                class="tag">SunnyCare</span><span class="tag">Clinical Documentation</span><span class="tag">PHIPA
+                Familiarity</span><span class="tag">Clinical Workflows</span></div>
+            <p class="skill-note">EHR experience as a clinical end user; no system-administration expertise is implied.
+            </p>
+          </article>
+          <article class="skill-card blue">
+            <h3>Professional Software</h3>
+            <div class="tags"><span class="tag">Microsoft 365</span><span class="tag">Word</span><span
+                class="tag">PowerPoint</span><span class="tag">Outlook</span><span class="tag">Teams</span><span
+                class="tag">SharePoint</span><span class="tag">OneDrive</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="projects">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>Selected Analytics Projects</h2>
+          <p>Applied work in healthcare reporting, public-sector data, business intelligence, forecasting, and cloud
+            databases. Visit <a href="https://github.com/balbina-rosabal" target="_blank" rel="noopener noreferrer">my
+              GitHub profile</a> to explore my published repositories. Project-specific links can be added as each
+            repository goes live.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <div class="project-label">HEALTHCARE &amp; BI</div>
+            <h3>Quality of Life in Canada - Healthcare Analysis</h3>
+            <p class="project-meta">Power BI · DAX · Statistics Canada <span aria-hidden="true">·</span> Humber
+              Polytechnic, 2026</p>
+            <p>Owned the healthcare component of a collaborative BI project, developing dashboards to examine life
+              expectancy, chronic conditions, obesity, mental health and unmet healthcare needs.</p>
+            <p><strong>Impact:</strong> Used DAX and interactive visualizations to communicate patterns in healthcare
+              indicators, applying clinical knowledge to interpret findings and support discussion.</p>
+            <div class="tags"><span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">Statistics
+                Canada</span></div><a class="project-link" data-project="healthcare"
+              href="https://github.com/balbina-rosabal" target="_blank" rel="noopener noreferrer">Explore my GitHub <svg
+                class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 4h6v6M20 4l-9 9" />
+                <path d="M20 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6" />
+              </svg><span class="sr-only"> (opens in new tab)</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-label">PUBLIC SECTOR &amp; DATA ENGINEERING</div>
+            <h3>Toronto Shelter Capacity &amp; Overcrowding Analytics</h3>
+            <p class="project-meta">Python · MySQL · Prophet · Power BI <span aria-hidden="true">·</span> Humber
+              Polytechnic, 2026</p>
+            <p>Analyzed 274K+ City of Toronto shelter records across 278 programs and 41 organizations to investigate
+              capacity gaps, overcrowding risk and sector-level patterns.</p>
+            <p><strong>Impact:</strong> Consolidated six annual datasets, automated cleaning, validation and MySQL
+              loading in Python, and built reusable views, forecasting and Power BI reporting.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">MySQL</span><span
+                class="tag">Prophet</span><span class="tag">Power BI</span></div><a class="project-link"
+              data-project="shelter" href="https://github.com/balbina-rosabal" target="_blank"
+              rel="noopener noreferrer">Explore my GitHub <svg class="ico" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 4h6v6M20 4l-9 9" />
+                <path d="M20 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6" />
+              </svg><span class="sr-only"> (opens in new tab)</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-label">SQL &amp; BUSINESS INTELLIGENCE</div>
+            <h3>E-Commerce Multi-Channel Analytics</h3>
+            <p class="project-meta">MySQL · SQL · Power BI <span aria-hidden="true">·</span> Humber Polytechnic, 2026
+            </p>
+            <p>Integrated web, mobile and partner data into a relational reporting model with reusable SQL views and
+              Power BI KPIs; validated sources and investigated inconsistencies.</p>
+            <p><strong>Impact:</strong> Built repeatable analytical structures and reporting for revenue, products and
+              channels; used EXPLAIN and indexing to reduce query rows scanned from 240 to 34.</p>
+            <div class="tags"><span class="tag">SQL</span><span class="tag">MySQL</span><span class="tag">Power
+                BI</span></div><a class="project-link" data-project="ecommerce"
+              href="https://github.com/balbina-rosabal" target="_blank" rel="noopener noreferrer">Explore my GitHub <svg
+                class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 4h6v6M20 4l-9 9" />
+                <path d="M20 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6" />
+              </svg><span class="sr-only"> (opens in new tab)</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-label">PREDICTIVE ANALYTICS</div>
+            <h3>Walmart Sales Forecasting</h3>
+            <p class="project-meta">Python · LightGBM · CatBoost · Time series <span aria-hidden="true">·</span> Humber
+              Polytechnic, 2026</p>
+            <p>Analyzed 421K+ sales observations across 3,331 Store-Department time series using chronological
+              validation and leakage-aware feature engineering for 13-week forecasts.</p>
+            <p><strong>Impact:</strong> Reduced forecast error approximately 13.2% against a Seasonal Naive benchmark;
+              documented model comparisons and validation decisions.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">LightGBM</span><span
+                class="tag">CatBoost</span><span class="tag">Time Series</span></div><a class="project-link"
+              data-project="walmart" href="https://github.com/balbina-rosabal" target="_blank"
+              rel="noopener noreferrer">Explore my GitHub <svg class="ico" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 4h6v6M20 4l-9 9" />
+                <path d="M20 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6" />
+              </svg><span class="sr-only"> (opens in new tab)</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-label">CLOUD &amp; DATABASES</div>
+            <h3>Secure Cloud MySQL Database on AWS</h3>
+            <p class="project-meta">AWS EC2 · Ubuntu · MySQL · SQL · SSH <span aria-hidden="true">·</span> Humber
+              Polytechnic, 2026</p>
+            <p>Independently deployed a four-table relational MySQL sales database on an AWS EC2 Ubuntu instance,
+              implementing PK/FK relationships, CRUD operations, joins and transaction controls.</p>
+            <p><strong>Impact:</strong> Secured database access using IP-restricted SSH, non-public database/management
+              ports and an encrypted SSH tunnel; resolved authentication, networking and database-access issues.</p>
+            <div class="tags"><span class="tag">AWS EC2</span><span class="tag">MySQL</span><span
+                class="tag">SQL</span><span class="tag">SSH</span></div><a class="project-link" data-project="aws"
+              href="https://github.com/balbina-rosabal" target="_blank" rel="noopener noreferrer">Explore my GitHub <svg
+                class="ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 4h6v6M20 4l-9 9" />
+                <path d="M20 13v6a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h6" />
+              </svg><span class="sr-only"> (opens in new tab)</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="education">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>Education</h2>
+          <p>Formal qualifications and selected postgraduate clinical research coursework.</p>
+        </div>
+        <div class="education">
+          <article class="education-card">
+            <h3>Postgraduate Certificate, Data Analytics (Honours)</h3>
+            <div class="school">Humber Polytechnic</div>
+            <div class="years">2026</div>
+            <p class="course">Overall Average: 89.3%</p>
+          </article>
+          <article class="education-card">
+            <h3>Applied Clinical Research, Selected Postgraduate Coursework</h3>
+            <div class="school">McMaster Continuing Education</div>
+            <div class="years">2022–2023</div>
+            <p class="course">Principles of Clinical Research · Research Ethics · Clinical Trial Design</p>
+          </article>
+          <article class="education-card">
+            <h3>Bachelor of Science in Nursing (Honours)</h3>
+            <div class="school">University of Toronto</div>
+            <div class="years">2016</div>
+          </article>
+          <article class="education-card">
+            <h3>Bachelor of Science in Biology (Honours, with Distinction)</h3>
+            <div class="school">Nipissing University</div>
+            <div class="years">2014</div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="activity">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>Training &amp; Research Activity</h2>
+          <p>Additional learning and research contributions.</p>
+        </div>
+        <div class="activity-grid">
+          <article class="activity-card">
+            <h3>Dashboard in a Day – Power BI</h3>
+            <p>Microsoft Power BI Training</p>
+          </article>
+          <article class="activity-card">
+            <h3>Conference Abstract and Proceedings – Research Assistant Acknowledgement</h3>
+            <p>June 2026 · <em>NLP-Driven Discovery of Urban Coyote Behavior Patterns in Municipal Citizen-Report
+                Data</em></p>
+            <p>Contribution: Source-material, policy, regulatory and municipal-program research informing interview
+              preparation and recommendations. Third International Student Conference on AI, Data Science, and Analytics
+              Innovation.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="about">
+      <div class="wrap">
+        <div class="section-heading">
+          <h2>About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div>
+            <p>I'm Balbina, a Toronto-based data analytics graduate with a background in healthcare, biology, and
+              applied research. My career has taken me from clinical practice to research and data analysis, with a
+              consistent interest in understanding complex systems and finding ways to improve them.</p>
+            <p>Today, I combine technical skills in SQL, Python, and Power BI with practical experience in research,
+              healthcare operations, and evidence-based problem-solving.</p>
+          </div>
+          <div>
+            <h3>Interests &amp; What Drives Me</h3>
+            <p>I'm particularly interested in the intersection of <strong>data, human well-being, and environmental
+                sustainability</strong>. I'm drawn to work that explores how healthcare systems function, how
+              communities respond to social and environmental challenges, and how reliable evidence can inform better
+              decisions.</p>
+            <p>My interests include public health, healthcare delivery, environmental management, urban ecology, climate
+              resilience, and sustainable communities.</p>
+            <p>Ultimately, I'm motivated by opportunities to contribute to meaningful research, improve complex systems,
+              and support decisions that have a positive impact on people and the environments we share.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="contact">
+      <div class="wrap">
+        <div class="bottom-cta">
+          <div>
+            <h2>Let's connect.</h2>
+            <p>Open to opportunities in analytics, research, and evidence-based decision support.</p>
+          </div><a href="mailto:balbina.rosabal@gmail.com">Email Me ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="wrap footer-grid"><span>© <span id="year">2026</span> Balbina Rosabal · Toronto, Canada</span><span><a
+          href="https://www.linkedin.com/in/balbina-rosabal/">LinkedIn</a> · <a
+          href="https://github.com/balbina-rosabal">GitHub</a></span></div>
+  </footer>
+  <script>
+    const projectRepositories = {
+      healthcare: '',
+      shelter: '',
+      ecommerce: '',
+      walmart: '',
+      aws: ''
+    };
+    document.querySelectorAll('[data-project]').forEach(link => {
+      const url = projectRepositories[link.dataset.project];
+      if (typeof url === 'string' && /^https:\/\/github\.com\/balbina-rosabal\/[A-Za-z0-9_.-]+\/?$/.test(url)) {
+        link.href = url;
+        link.childNodes[0].textContent = 'View Project Repository ';
+      }
+    });
+    document.getElementById('year').textContent = String(new Date().getFullYear());
+  </script>
+</body>
+
+</html>
