@@ -17,4 +17,4 @@ My interests lie in understanding complex systems, identifying meaningful patter
 ## Connect
 
 - [LinkedIn](https://www.linkedin.com/in/balbina-rosabal/)
-- [GitHub projects](https://github.com/balbina-rosabal)
+- [GitHub projects](https://github.com/BalbinaRosabal)
